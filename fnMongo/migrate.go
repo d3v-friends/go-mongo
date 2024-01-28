@@ -122,9 +122,10 @@ func createCollection(ctx context.Context, models []*MigrateModel) (err error) {
 	}
 
 	for _, model := range models {
-		if _, err = fnMatch.Get(names, func(v string) bool {
+		var has bool
+		if has = fnMatch.Has(names, func(v string) bool {
 			return v == model.ColNm
-		}); err != nil {
+		}); has {
 			continue
 		}
 
