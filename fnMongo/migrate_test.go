@@ -3,8 +3,8 @@ package fnMongo
 import (
 	"context"
 	"github.com/d3v-friends/go-mongo/mongoCodec"
-	"github.com/d3v-friends/go-snippet/fn/fnEnv"
-	"github.com/d3v-friends/go-snippet/fn/fnPanic"
+	"github.com/d3v-friends/go-tools/fn/fnEnv"
+	"github.com/d3v-friends/go-tools/fn/fnPanic"
 	"testing"
 )
 
